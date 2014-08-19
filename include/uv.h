@@ -1906,6 +1906,7 @@ struct uv_fs_s {
   uv_fs_type fs_type;
   uv_loop_t* loop;
   uv_fs_cb cb;
+  int throw_safe;
   ssize_t result;
   void* ptr;
   const char* path;
